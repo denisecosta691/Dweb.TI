@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      background-color: #f0f3f8;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 0.3rem;
+      border: 1px solid #b0d7a8;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .inline-group {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .inline-group input {
+      flex: 1;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    button {
+      background-color: #3089f2;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1c6ed1;
+    }
+  </style>
+<body>
+     <form>
+    <label>Nome Completo:
+      <input type="text" name="nome" required>
+    </label>
+
+    <label>CPF:
+      <input type="text" name="cpf" required>
+    </label>
+
+    <div class="inline-group">
+      <label>Data de Nascimento:
+        <input type="text" name="data_nascimento" placeholder="__/__/____" required>
+      </label>
+
+      <label>Data de Emissão:
+        <input type="text" name="data_emissao" placeholder="__/__/____" required>
+      </label>
+    </div>
+
+    <label>RG:
+      <input type="text" name="rg">
+    </label>
+
+    <label>Email:
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Endereço:
+      <input type="text" name="endereco">
+    </label>
+
+    <div class="inline-group">
+      <label>Cep:
+        <input type="text" name="cep">
+      </label>
+
+      <label>Número:
+        <input type="text" name="numero">
+      </label>
+    </div>
+
+    <div class="inline-group">
+      <label>Senha:
+        <input type="password" name="senha" required>
+      </label>
+
+      <label>Confirme senha:
+        <input type="password" name="confirma_senha" required>
+      </label>
+    </div>
+
+    <div class="button-container">
+      <button type="submit">Cadastrar</button>
+    </div>
+  </form>
+</body>
+</html>

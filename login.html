@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    body {
+      background-color: #e5e8ed;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #b7d4fd;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .social-login {
+      margin: 1.5rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .social-login img {
+      width: 36px;
+      cursor: pointer;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+
+    .button-group button {
+      background-color: #3089f2;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 16px;
+      width: 45%;
+      cursor: pointer;
+    }
+
+    .button-group button:hover {
+      background-color: #1c6ed1;
+    }
+  </style>
+<body>
+     <div class="login-container">
+    <form>
+      <label for="login">Login:</label>
+      <input type="text" id="login" name="login" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <div class="social-login">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook">
+      </div>
+
+      <div class="button-group">
+        <button type="button">Voltar</button>
+        <button type="submit">Entrar</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
