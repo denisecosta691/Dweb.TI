@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de cadastro</title>
+</head>
+<style>
+    body{
+        background-color:white;
+    }
+    /*#minhaTabela{
+
+    }*/
+    table, th, td {
+  border:1px solid mediumpurple;
+  color: black;
+}
+button{
+    background-color: mediumpurple;
+    color: black;
+    font-family:verdana;
+}
+</style>
+<body>
+    <h1 style="font-family:verdana">Histórico de Cadastro </h1>
+    <input placeholder="Buscar por nome ou e-mail...">
+    <button type="text" placeholder="button-inside" style="background-color: mediumpurple;">Filtrar por Data</button><br>
+
+    <table id="minhaTabela"><br>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Data de Cadastro</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>Ana Ferreira</td>
+                <td>ana.ferreira@exemplo.com</td>
+                <td>5 de abril de 2024</td>
+                <td>
+                <button onclick="editar(this)"style="background-color: rgb(159, 230, 159);">Editar</button>
+                <button onclick="apagar(this)"style="background-color: rgb(156, 67, 67);">Apagar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Diego Silva</td>
+                <td>diego.silva@exemplo.com</td>
+                <td>5 de abril de 2024</td>
+                <td>
+                   <button onclick="editar(this)"style="background-color: rgb(159, 230, 159);">Editar</button>
+                   <button onclick="apagar(this)"style="background-color: rgb(156, 67, 67);">Apagar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Clara Souza</td>
+                <td>clara.souza@exemplo.com</td>
+                <td>4 de abril de 2024</td>
+                <td>
+                  <button onclick="editar(this)"style="background-color: rgb(159, 230, 159);">Editar</button>
+                  <button onclick="apagar(this)"style="background-color: rgb(156, 67, 67);">Apagar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Lucas Almeida</td>
+                <td>lucas.almeida@exemplo.com</td>
+                <td>4 de abril de 2024</td>
+                <td>
+                    <button onclick="editar(this)"style="background-color: rgb(159, 230, 159);">Editar</button>
+                    <button onclick="apagar(this)"style="background-color: rgb(156, 67, 67);">Apagar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Mariana Santos</td>
+                <td>mariana.santos@exemplo.com</td>
+                <td>3 de abril de 2024</td>
+                <td>
+                   <button onclick="editar(this)"style="background-color: rgb(159, 230, 159);">Editar</button>
+                   <button onclick="apagar(this)" style="background-color: rgb(156, 67, 67);">Apagar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Pedro Oliveira</td>
+                <td>pdero.oliveira@exemplo.com</td>
+                <td>3 de abril de 2024</td>
+                <td>
+                <button onclick="editar(this)"style="background-color: rgb(159, 230, 159);">Editar</button>
+                <button onclick="apagar(this)" style="background-color: rgb(156, 67, 67);">Apagar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Julia Rodrigues</td>
+                <td>julia.rodrigues@exemplo.com</td>
+                <td>2 de abril de 2024</td>
+                <td>
+                    <button onclick="editar(this)"style="background-color: rgb(159, 230, 159);">Editar</button>
+                    <button onclick="apagar(this)"style="background-color: rgb(156, 67, 67);">Apagar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Rafael Martins</td>
+                <td>rafael.martins@exemplo.com</td>
+                <td>2 de abril de 2024</td>
+                <td>
+                    <button onclick="editar(this)" style="background-color: rgb(159, 230, 159);">Editar</button>
+                    <button onclick="apagar(this)" style="background-color: rgb(156, 67, 67);">Apagar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table><br>
+    <button href="">Voltar</button>
+    <button>Atualizar</button>
+</body>
+</html>

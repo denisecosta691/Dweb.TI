@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Inicial</title>
+  <!--<link rel="stylesheet" href="style.css" />-->
+</head>
+<style>
+    body{
+        color: black;
+        background-color: rgb(252, 254, 254);
+    }
+    table, th, td {
+  border: 2px solid black;
+  /*border-collapse: collapse;*/
+  border-radius: 10px;
+  background-color: azure;
+  height: 70%;
+}
+.imagem-esquerda{
+    width: 20%;
+    height: 20%;
+   /* float:left;*/
+}
+button{
+    background-color: mediumpurple;
+    color: white;
+}
+</style>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-text">
+        <h2>Olá, Prof. Denise</h2>
+        <p>Veja suas turmas e o progresso dos alunos</p>
+      </div>
+      <img src="https://media.istockphoto.com/id/1171911961/pt/vetorial/female-teacher-with-books-and-chalkboard-concept-illustration-for-school-education.jpg?s=612x612&w=0&k=20&c=u5tceBMeG23vf3JUh7UJOTvlIt9UVx5MN0_euiUCkYk=" alt="Professora" class="imagem-esquerda"/>
+      <div class="buttons"><br>
+          <button>+ Adicionar Aluno</button>
+          <button>Exportar Notas</button>
+        </div>
+    </div>
+
+    <h3>Meus Alunos</h3>
+
+    <table style="width:50%">
+      <tr>
+        <td>Turma</td>
+        <td>Progresso</td>
+      </tr>
+      <tr>
+        <td>Matemática</td>
+        <td>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 60%;"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Português 1A</td>
+        <td>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 30%;"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Ciências 8B</td>
+        <td>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 20%;"></div>
+          </div>
+        </td>
+      </tr>
+    </table><br>
+
+    <div class="bottom-buttons">
+      <a href="calculo.html" style="display:inline-block; padding: 10px 20px; background-color: #3636ec; color: white; text-decoration: none; border-radius: 5px;">
+    Calculadora
+</a>
+      <!--<button>Calculadora</button>-->
+      <a href="login.html" style="display:inline-block; padding: 10px 20px; background-color: #3636ec; color: white; text-decoration: none; border-radius: 5px;">
+  Voltar
+</a>
+      <!--<button>Voltar</button>-->
+    </div>
+  </div>
+</html>
